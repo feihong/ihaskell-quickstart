@@ -1,19 +1,20 @@
 # Feihong's Haskell Quickstart
 
-Download IHaskell files and build docker container:
+Run using Docker:
 
 ```
-mkdir ihaskell
-cd ihaskell
-wget -O - https://github.com/gibiansky/IHaskell/tarball/master | tar xz --strip-components 1
-docker build -t ihaskell:latest .
+docker run --rm \
+      -p 8888:8888 \
+      -v $PWD:/home/jovyan/pwd \
+      --env JUPYTER_ENABLE_LAB=yes \
+      --env JUPYTER_TOKEN=x \
+      --name ihaskell_notebook \
+      crosscompass/ihaskell-notebook:latest
 ```
 
-Run IHaskell:
-
-1. `docker run --rm -it -p8888:8888 ihaskell:latest`
-1. Open `http://localhost:8888` in browser
+Open http://localhost:8888?token=x in browser
 
 ## Links
 
 [Haskell kernel for Jupyter](https://github.com/gibiansky/IHaskell)
+[IHaskell Docker image](https://github.com/jamesdbrock/ihaskell-notebook)
