@@ -1,18 +1,12 @@
 # Feihong's Haskell Quickstart
 
-Run using Docker:
+## Notebooks
 
-```
-docker run --rm \
-      -p 8888:8888 \
-      -v $PWD:/home/jovyan/pwd \
-      --env JUPYTER_ENABLE_LAB=yes \
-      --env JUPYTER_TOKEN=x \
-      --name ihaskell_notebook \
-      crosscompass/ihaskell-notebook:latest
-```
+- [HelloWorld](https://nbviewer.jupyter.org/github/feihong/haskell-quickstart/blob/master/HelloWorld.ipynb)
 
-Open http://localhost:8888?token=x in browser
+## Running IHaskell
+
+Start Docker container by running `.\start.sh`. Open http://localhost:8888?token=x in browser.
 
 ## Commands
 
@@ -30,5 +24,5 @@ Unpause the container
 
 ## Links
 
-[Haskell kernel for Jupyter](https://github.com/gibiansky/IHaskell)
-[IHaskell Docker image](https://github.com/jamesdbrock/ihaskell-notebook)
+- [Haskell kernel for Jupyter](https://github.com/gibiansky/IHaskell)
+- [IHaskell Docker image](https://github.com/jamesdbrock/ihaskell-notebook)
