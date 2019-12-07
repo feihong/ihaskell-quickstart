@@ -1,5 +1,11 @@
 # Feihong's Haskell Quickstart
 
+## Setup
+
+```
+docker build --rm --force-rm -t feihong/ihaskell-notebook:latest .
+```
+
 ## Notebooks
 
 - [HelloWorld](https://nbviewer.jupyter.org/github/feihong/haskell-quickstart/blob/master/HelloWorld.ipynb)

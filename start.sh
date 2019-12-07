@@ -6,4 +6,4 @@ docker run --rm \
       --env JUPYTER_ENABLE_LAB=yes \
       --env JUPYTER_TOKEN=x \
       --name ihaskell_notebook \
-      crosscompass/ihaskell-notebook:latest
+      feihong/ihaskell-notebook:latest
