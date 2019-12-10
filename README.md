@@ -16,6 +16,11 @@ Start Docker container by running `.\start.sh`. Open http://localhost:8888?token
 
 ## Commands
 
+Launch bash inside the container
+
+    docker exec -it ihaskell_notebook /bin/bash
+    stack ghci
+
 Stop the container
 
     docker stop ihaskell_notebook
